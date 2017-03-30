@@ -2,9 +2,14 @@
 
 $(document).ready(function() {
     // register our function as the "callback" to be triggered by the form's submission event
+
     $("#form-gif-request").submit(fetchAndDisplayGif); // in other words, when the form is submitted, fetchAndDisplayGif() will be executed
 });
 
+// var input = $("input[name='riddle']");
+// input.oninvalid = function(event) {
+//     event.target.setCustomValidity('Wrong answer, keep trying... No GIFs for you.');
+// };
 
 /**
  * sends an asynchronous request to Giphy.com aksing for a random GIF using the 
